@@ -1,11 +1,15 @@
 import React from 'react';
-import './App.css';
-import TodoList from './components/TodoList';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './Router/AppRouter';
+
 
 function App() {
+
   return (
-    <div className='todo-app'>
-      <TodoList />
+    <div>
+      <BrowserRouter>
+      <AppRouter />
+      </BrowserRouter>
     </div>
   );
 }
